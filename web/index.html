@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>BODY FAT TRACKER </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div class="main-nav">
+        <ul class="nav">
+          <li style = "float:left" class="name">Bodyfat Tracker</li>       
+            <li><a href="#">Login</a></li>
+           <li><a href="index.html">Register</a></li>
+        </ul>
+    </div>
+        <main>  
+        <div>
+            <center>
+                <h2> Welcome to BodyFat Tracker</h2> 
+                <p>Please enter the following information to have your Bodyfat estimated!</p>            
+            <form method = "post" action = "BioDataServlet"  >
+                <input type ="checkbox" name = "gender" value ="m" />  Male 
+                <input type ="checkbox" name = "gender" value ="f" /> Female   
+                <input type ="checkbox" name = "measurement" value ="Imp" /> Imperial
+                <input type ="checkbox" name = "measurement" value= "Met"/> Metric
+                <br />
+                <i>Imperial is pounds/inchs and Metric is kgs/m</i>
+                 <br />
+                Enter your Weight (lbs/kgs):
+                <input type = "text" name = "Weight" />
+                <br />
+                Enter your Height (inchs/m): 
+                <input type = "text" name = "Height" />
+                <br />
+                Enter your Age: 
+                <input type = "number" name = "Age" />
+                <br />
+                <input type ="submit" value ="Calculate" />
+             </form>
+          </center>
+         </div>
+        </main>
+      </body>
+</html>
+    
